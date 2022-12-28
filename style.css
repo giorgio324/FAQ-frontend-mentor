@@ -23,6 +23,7 @@ Variables
 	--ff-primary: "Kumbh Sans", sans-serif;
 	--transition: all 0.3s linear;
 }
+
 /*
 =============== 
 Global Styles
@@ -36,18 +37,22 @@ Global Styles
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	font-family: var(--ff-primary);
 	background: var(--VeryDarkBlue);
 	color: var(--clr-grey-1);
 	font-size: 12px;
 }
+
 ul {
 	list-style-type: none;
 }
+
 a {
 	text-decoration: none;
 }
+
 img:not(.icon) {
 	width: 100%;
 	display: block;
@@ -61,11 +66,13 @@ p {
 .hide {
 	display: none;
 }
+
 .underline {
 	min-height: 1px;
 	height: 1px;
 	background-color: var(--Lighgrayishblue);
 }
+
 /* whole screen */
 .container {
 	min-height: 100vh;
@@ -74,63 +81,75 @@ p {
 	justify-content: center;
 	align-items: center;
 }
+
 /* end */
 /* content container */
 .content-container {
 	max-height: 610px;
 	background: var(--White);
 	border-radius: 18px;
-	padding: 0 2rem;
+	padding: 1rem 1.5rem;
 }
+
 /* end */
 
 /* text containers */
 .text-container {
-	margin-top: 7.5rem;
+	margin-top: 5rem;
 }
+
 .title {
 	text-align: center;
-	font-size: 1.35rem;
-	margin: 1rem 0;
+	font-size: 1.15rem;
+	margin: 0.75rem 0;
 }
+
 .question-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0.85rem 0;
 }
+
 .icon {
 	cursor: pointer;
 	margin-left: 0.5rem;
 }
+
 .question-title {
 	margin: 0.25rem 0;
 	cursor: pointer;
 }
+
 .question-text {
 	margin: 0.25rem auto;
 	max-width: 240px;
 }
+
 /* end */
 /* picture container */
 .img-container {
 	position: relative;
 }
+
 .girl-mobile {
 	position: absolute;
 	background: url(images/bg-pattern-mobile.svg) no-repeat;
-	transform: translateY(-56%);
+	transform: translateY(-63%);
 	background-position: 3px 140px;
 	padding: 3rem 1rem;
 }
+
 /* end */
 /* remove desktop elements */
 #d-girl {
 	display: none;
 }
+
 #box {
 	display: none;
 }
+
 /* for bigger screen */
 
 @media screen and (min-width: 1065px) {
@@ -139,13 +158,16 @@ p {
 			font-size: 0.9rem;
 		}
 	}
+
 	#m-girl {
 		display: none;
 	}
+
 	#d-girl {
 		display: inline-block;
 		width: 470px;
 	}
+
 	.img-container {
 		background: url(images/bg-pattern-desktop.svg) no-repeat;
 		background-size: contain;
@@ -154,15 +176,18 @@ p {
 		overflow: hidden;
 		width: 100%;
 	}
+
 	.content-container {
 		position: relative;
 		box-shadow: 0px 32px 27px -8px rgb(59 59 135 / 81%);
 	}
+
 	.desktop-img-container {
 		padding-top: 3rem;
 		display: block;
 		transform: translate(-15%);
 	}
+
 	#box {
 		display: inline-block;
 		position: absolute;
@@ -172,20 +197,24 @@ p {
 		max-width: 185px;
 		z-index: 1;
 	}
+
 	.question-text {
 		max-width: none;
 	}
+
 	.content-container {
 		display: flex;
 		justify-content: space-between;
 		padding: 0;
 	}
+
 	.text-container {
 		margin: auto 0;
 		padding: 2rem 4rem;
 		width: 100%;
 		max-width: 380px;
 	}
+
 	.title {
 		text-align: start;
 	}
